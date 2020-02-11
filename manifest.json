@@ -1,0 +1,17 @@
+{
+    "name": "Adblock Extension",
+    "description": "Block advertisements on a webpage",
+    "version": "0.1",
+    "manifest_version": 1,
+
+    "icons": {
+        "600": "icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
